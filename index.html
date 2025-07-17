@@ -104,7 +104,7 @@
             button.addEventListener('click', async () => {
                 const protocol = button.getAttribute('data-protocol');
                 try {
-                    const response = await fetch(`http://yourname.infinityfreeapp.com/github-fetch.php?protocol=${protocol}`);
+                    const response = await fetch(`http:// milad.infinityfreeapp.com/github-fetch.php?protocol=${protocol}`);
                     const data = await response.json();
                     if (data.link) {
                         subscriptionLinkDiv.innerHTML = `<p class="text-blue-400 break-all">${data.link}</p>`;
@@ -134,7 +134,7 @@
                 return;
             }
             try {
-                const response = await fetch('http://yourname.infinityfreeapp.com/analyze.php', {
+                const response = await fetch(' milad.infinityfreeapp.com/analyze.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ link })
